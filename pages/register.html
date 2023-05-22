@@ -5,11 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div>
+    <div class="topInfo">
+        <div class="img_container">
+          <img src="http://picsum.photos/100/100" alt="logo" />
+        </div>
+        <div class="title">
+          <h1>Restaurant Name</h1>
+          <h3>Dining Establishment</h3>
+        </div>
+        <div class="topSidebar">
+          <div class="topSidebarLabels">
+            <ul>
+              <li><a class="" href="./index2.html">Home</a></li>
+              <li><a class="" href="./login.html">Login</a></li>
+              <li><a class="active" href="./register.html">Register</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="register">
     <form id="registration">
-        <h1 style="text-align: center;">Registration Page</h1>
+        <h1>Registration Page</h1>
         <label for="firstName">First Name</label>
         <input type="text" id="firstName" placeholder="Enter Your First Name">
         <br>
@@ -41,7 +62,8 @@
         <input type="date" id="dob" placeholder="Enter Date of Birth">
         <br>
         <br>
-        <select>
+        <label for="refSource">Where did you hear about us?</label>
+        <select class="refSource" id="refSource">
             <option value="">Online</option>
             <option value="">Referral</option>
             <option value="">Other</option>
@@ -52,7 +74,12 @@
         <br>
         <br>
     </form>
-    <p>Already registered? Click <a href="/login.html">here</a> to log in instead!</p>
+    <div class="links">
+    <p>Already registered? Click <a href="../pages/login.html">here</a> to log in instead!</p>
+  </div>
+  </div>
+<div class="copyright">
+  <footer>Copyright © 2023 Ryan Kozin. All Rights Reserved.</footer>
 </div>
 </body>
 </html>

@@ -1,35 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div>
-      <form id="form">
-        <h1>Login</h1>
-        <label for="username">Email:</label>
-        <input type="text" id="username" placeholder="Enter Your Email" />
-        <br />
-        <br />
-        <label for="password">Password:</label>
-        <input
-          type="password"
-          id="password"
-          placeholder="Enter Your Password"
-        />
-        <br />
-        <br />
-        <input type="submit" value="Login" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #3AA7A3;
+    }
+
+    .login {
+      height: auto;
+      width: 500px;
+      border: 1px solid black;
+      background-color: #5EC2B7;
+      color: white;
+      text-align: center;
+      padding: auto;
+      margin: auto;
+      margin-top: 20px;
+      box-shadow: 2px 2px 5px black;
+      transition-property: background-color;
+      transition-duration: 2s;
+    }
+    .login:hover{
+      background-color: #389489;
+    }
+
+    .login a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .login a:hover {
+      color: #3AA7A3
+    }
+
+    .login h6 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-top: -20px;
+    }
+
+    .login h1 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .login input[type=text], input[type=password]{
+      width: 90%;
+      color: white;
+      text-align: center;
+      padding: 8px;
+      margin-top: 5px;
+      background-color: #9DD9D2;
+      border: 0px solid black;
+    }
+    .login input[type=submit]{
+      width: 80%;
+      color: white;
+      text-align: center;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      background-color: #9DD9D2;
+      border: 0px solid black;
+    }
+
+    .login input::placeholder {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topInfo">
+    <div class="img_container">
+      <img src="http://picsum.photos/100/100" alt="logo" />
+    </div>
+    <div class="title">
+      <h1>Restaurant Name</h1>
+      <h3>Dining Establishment</h3>
+    </div>
+    <div class="topSidebar">
+      <div class="topSidebarLabels">
+        <ul>
+          <li><a href="./index2.html">Home</a></li>
+          <li><a class="active" href="./login.html">Login</a></li>
+          <li><a href="./register.html">Register</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="login">
+    <form id="form">
+      <h1>Login</h1>
+      <label for="username">Email:</label>
+      <input type="text" id="username" placeholder="Enter Your Email" />
+      <br />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter Your Password" />
+      <br />
+      <br />
+      <input type="submit" value="Login" />
+      <div class="rememberMeDiv">
         <input type="checkbox" name="rememberMe" id="rememberMe" />
         <label for="rememberMe">Remember my password</label>
-      </form>
-      <p>
-        Need an account? Click <a href="/register.html">here</a> to register
-        instead!
-      </p>
+      </div>
+    </form>
+   <div class="links">
+    <p>
+      Need an account? Click <a href="./register.html">here</a> to register
+      instead!
+    </p>
+    <p>
+      Forgot your password? Click <a href="./contact.html">here</a> to contact
+      us!
+    </p>
     </div>
-  </body>
+  </div>
+  </div>
+  <div class="copyright">
+    <footer>Copyright © 2023 Ryan Kozin. All Rights Reserved.</footer>
+</div>
+</body>
+
 </html>

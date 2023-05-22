@@ -6,6 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        #bottomImage {
+           max-width: 100%;
+        max-height: auto;
+        border: 1px solid black;
+        }
+        .bImage .img_container {
+            width: 25%;
+            height: auto;
+            margin: auto;
+            transition-property: width, height;
+        transition-duration: 2s;
+        }
+        .bImage .img_container:hover {
+            width: 75%;
+            height: auto;
+      }
+        
+    </style>
 </head>
 <body>
     <div class="topInfo">
@@ -13,14 +32,14 @@
           <img src="http://picsum.photos/100/100" alt="logo" />
         </div>
         <div class="title">
-          <h1>Cheesecake Freddy's</h1>
+          <h1>Restaurant Name</h1>
           <h3>Dining Establishment</h3>
         </div>
         <div class="topSidebar">
           <div class="topSidebarLabels">
             <ul>
-              <li><a href="./index2.html">Home</a></li>
-              <li><a href="./login.html">Login</a></li>
+              <li><a class="active" href="./index2.html">Home</a></li>
+              <li><a class="" href="./login.html">Login</a></li>
               <li><a href="./register.html">Register</a></li>
               <li><a href="./contact.html">Contact</a></li>
             </ul>
@@ -30,14 +49,15 @@
     </div>
     <div class="main">
         <div class="hours">
-            <table class="hoursTable" style="border: 1px solid black; text-align: center;">
+            <table class="hoursTable" style="border: 1px solid black; text-align: center; border-collapse:collapse; width: 100%;">
                 <thead>
-                    <tr>
-                        <th>Days</th>
-                        <th>Hours</th>
-                    </tr>
+                    <th colspan="2">Operating Hours</th>
                 </thead>
                 <tbody>
+                    <tr>
+                        <th>Day</th>
+                        <th>Hours</th>
+                    </tr>
                     <tr>
                         <td>Mon.</td>
                         <td>9a-5p</td>
@@ -69,6 +89,23 @@
                 </tbody>
             </table>
         </div>
+        <div class="welcome">
+            <div class="welcomeTitle">
+                <h2>Welcome to Cheesecake Freddy's!</h2>
+                <h5>A fine dining experience</h5>
+            </div>
+            <div class="welcomeBody">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus exercitationem quas dignissimos deserunt sed consectetur repudiandae velit magnam in maiores nobis, facere, vitae cum nisi ex ratione reiciendis qui? Eveniet repellat perspiciatis ad quidem consectetur, id fuga libero eum voluptate, tenetur repellendus! Tempora explicabo exercitationem provident nobis facilis officiis at.</p>
+            </div>
+            <div class="bImage">
+                <div class="img_container">
+                    <img id="bottomImage" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ffoodimentaryguy.files.wordpress.com%2F2012%2F05%2Fcheesecake.jpg&f=1&nofb=1&ipt=d45a33b78f6c314c5b737993d247c3857b71da05e1ec04bb363364f29eefca91&ipo=images" alt="img">
+                </div>
+        </div>
     </div>
+</div>
+<div class="copyright">
+    <footer>Copyright © 2023 Ryan Kozin. All Rights Reserved.</footer>
+</div>
 </body>
 </html>
