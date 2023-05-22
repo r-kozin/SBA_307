@@ -1,7 +1,7 @@
 # SBA_307
 
 Pages:
-index2.html (homepage)
+index.html (homepage)
 login.html (login page)
 register.html (register page)
 contact.html (contact page)
@@ -9,7 +9,7 @@ contact.html (contact page)
 CSS:
 style.css (stylesheet)
 
-index2.html (homepage)
+index.html (homepage)
   - Includes navagation bar at top (consistent across pages with active page highlighted)
   - table with hours of operation
   - heading and short paragraph for introduction to the site
